@@ -1,3 +1,5 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 body{
     font-family: "Poppins", sans-serif !important;
 }
@@ -30,11 +32,143 @@ body{
 }
 
 .head{
-    font-size: 7rex;
+    font-size: 4rem;
     font-weight: bolder;
-    line-height: 70px;
+    line-height: 80px;
+}
+
+.sub{
+    font-weight: bolder;
 }
 
 .violet{
     color: #6A38C2;
 }
+
+.imgs{
+    width: 4%;
+    z-index: -5;
+    filter: blur(3px);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.imgs1{
+    top: 20vh;
+    left:10vw;
+}
+
+.imgs2{
+    top: 20vh;
+    right:10vw;
+}
+
+.imgs3{
+    top:70vh;
+    left:20vw;
+}
+
+.imgs4{
+    top: 40vh;
+    right:25vw;
+}
+
+.imgs5{
+    top: 70vh;
+    right:15vw;
+}
+
+.smdiv{
+    box-shadow: 0px 0px 10px #0000001e;
+    border-radius: 10px;
+}
+
+@keyframes example {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.main{
+    backdrop-filter: blur(10px);
+}
+
+.round{
+    background: #6b38c222;
+    width: 60px;
+    height: auto;
+    padding: 12px;
+    border-radius: 50px;
+    color: #6A38C2;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hoverdiv{
+    transition: all 0.3s;
+    background: #ffffff !important;
+}
+
+.hoverdiv:hover{
+    background: #6b38c2 !important;
+    cursor:  pointer !important;
+    color: #ffffff;
+}
+
+.hoverdiv:hover .round{
+    background: #ffffffc9 !important;
+}
+
+@media screen and (max-width:990px){
+    .head{
+        font-size: 4rex;
+        line-height: 40px;
+    }
+
+    .imgs{
+        width: 10%;
+    }
+    .menusd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-bottom: 70px;
+    }
+    .headp{
+        font-size: small;
+    }
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; 
+    z-index: 9999; 
+  }
+  
+  .spinner-border {
+    width: 5% !important;
+    height: 5.35rem !important;
+    border-width: 0.4em !important;
+    border-color: #6A38C2 transparent !important; 
+  }
+  
+  body.loaded #loader {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  body:not(.loaded) .main,
+  body:not(.loaded) nav {
+    visibility: hidden;
+  }
+  
+  
+
+  

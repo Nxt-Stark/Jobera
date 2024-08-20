@@ -6,19 +6,29 @@
     <title>Jobera</title>
     <link rel="stylesheet" href="/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div id="loader" class="d-flex justify-content-center align-items-center position-fixed w-100 h-100 bg-white" style="z-index: 9999;">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 fixed-top">
     <a class="navbar-brand font-weight-bold" href="#" style="color:#6A38C2;font-family: 'Edu VIC WA NT Beginner', cursive;font-size: 40px;">Jobera</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto menusd">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -41,18 +51,202 @@
     </div>
 </nav>
 
-<section class="d-flex justify-content-center align-items-center text-center" style="min-height: 100vh;">
+<section class="d-flex justify-content-center align-items-center text-center position-relative main" style="min-height: 100vh;">
+    <img src="/imgs/google.png" alt="Google" class="position-absolute imgs imgs1">
+    <img src="/imgs/amazon.png" alt="Google" class="position-absolute imgs imgs2">
+    <img src="/imgs/microsoft.png" alt="Google" class="position-absolute imgs imgs3">
+    <img src="/imgs/apple.png" alt="Google" class="position-absolute imgs imgs4">
+    <img src="/imgs/ibm.png" alt="Google" class="position-absolute imgs imgs5">
     <div>
-      <h1 class="mb-3 head">Search, Apply &<br>Get Your <span class="violet">Dream Job</span></h1>
-      <p class="mb-4">Find the job that matches your skills and ambitions.<br>Start your journey towards success today!</p>
+      <h1 class="mb-4 head">Search, Apply &<br>Get Your <span class="violet">Dream Job</span></h1>
+      <p class="mb-5 headp">Find the job that matches your skills and ambitions.<br>Start your journey towards success today!</p>
       <button class="btn btn-primary btns px-5 py-3">Get Started</button>
     </div>
   </section>
 
+  <section class="d-flex justify-content-center align-items-center text-center position-relative main" style="min-height: 100vh;">
+    <div class="container">
+        <h1 class="mb-4 sub">Get Job with <span class="violet ">4 Quick ways</span></h1>
+        <p class="mb-5 headp">Discover efficient strategies to accelerate your job search and land your dream position.</p>
+        
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column">
+              <span class="round"><i class="bi bi-person-heart"></i></span>
+              <h5 class="mb-2 sub left-aligned violet" style="text-align: left;">Create an Account</h5>
+              <p style="text-align: justify;" class="small">Start your journey by creating a personalized account. Setting up your profile is quick and easy. By providing key details like your skills, experience, and preferred job type, you make it easier for employers to find you.</p>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column">
+              <span class="round"><i class="bi bi-search-heart-fill"></i></span>
+              <h5 class="mb-2 sub left-aligned violet" style="text-align: left;">Search Job</h5>
+              <p style="text-align: justify;" class="small">Explore a wide range of job openings that fit your qualifications. Use filters to narrow down by location, industry, and experience level. Get updated on relevant job postings that match your skills.</p>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column">
+              <span class="round"><i class="bi bi-file-earmark-medical-fill"></i></span>
+              <h5 class="mb-2 sub left-aligned violet" style="text-align: left;">Upload CV/Rusume</h5>
+              <p style="text-align: justify;" class="small">Highlight your education, experience, and achievements. A well-structured CV increases your chances of getting noticed by recruiters, leading to more interview opportunities that align with your expertise.</p>
+            </div>
+          </div>
+      
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column">
+              <span class="round"><i class="bi bi-briefcase-fill"></i></span>
+              <h5 class="mb-2 sub left-aligned violet" style="text-align: left;">Get Job</h5>
+              <p style="text-align: justify;" class="small">Track your progress and prepare for interviews. Stay engaged with potential employers, receive feedback, and improve your chances of success.You’ll soon secure your next career move.</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center text-center position-relative main" style="min-height: 100vh;">
+      <div class="container">
+          <h1 class="mb-4 sub"><span class="violet">Countless Career</span> options are<br>waiting <span class="violet">For you</span></h1>
+          
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="bi bi-laptop-fill"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Software</h5>
+                <p style="text-align: justify;" class="small">100+ Devolopment jobs.</p>
+                </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="fa-solid fa-pen-nib"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Design</h5>
+                <p style="text-align: justify;" class="small">100+ Design jobs.</p>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="fa-solid fa-shop"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Sales</h5>
+                <p style="text-align: justify;" class="small">100+ Sales jobs.</p>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="bi bi-currency-exchange"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Finance</h5>
+                <p style="text-align: justify;" class="small">100+ Finance jobs.</p>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="bi bi-car-front-fill"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Automobile</h5>
+                <p style="text-align: justify;" class="small">100+ Automobile jobs.</p>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="fa fa-truck"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Logistic/Delevery</h5>
+                <p style="text-align: justify;" class="small">100+ Logistic/Delevery jobs.</p>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="bi bi-megaphone-fill"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Marketing</h5>
+                <p style="text-align: justify;" class="small">100+ Marketing jobs.</p>
+              </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                <span class="round"><i class="bi bi-cone-striped"></i></span>
+                <h5 class="mb-2 sub left-aligned" style="text-align: left;">Construction</h5>
+                <p style="text-align: justify;" class="small">100+ Construction jobs.</p>
+              </div>
+            </div>
+            <button class="btn btn-primary btns px-5 py-3 w-50 mt-4">View all catogaries</button>
+
+          </div>
+        </div>      
+      </section>
+
+      <section class="d-flex justify-content-center align-items-center text-center position-relative main" style="min-height: 100vh;">
+        <div class="container">
+          <div class="container p-0 d-flex">
+            <div class="container p-0">
+            <h1 class="sub text-left">Latest <span class="violet">Job openings</span></h1>
+            <p class="small text-left mb-5">Discover the latest job openings from top companies which you might want to apply.</p>
+            </div>
+            <button class="btn btn-primary">View all</button>
+          </div>
+            
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                  <span class="round p-0"><img src="/imgs/companies/google.jpg" alt="google" class="img-fluid rounded-circle"></span>
+                  <h5 class="mb-2 sub left-aligned" style="text-align: left;">Google Inc</h5>
+                  <p style="text-align: justify;" class="small">100+ Devolopment jobs.</p>
+                  </div>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                  <span class="round p-0"><img src="/imgs/companies/ibm.jpg" alt="ibm" class="img-fluid rounded-circle"></span>
+                  <h5 class="mb-2 sub left-aligned" style="text-align: left;">Design</h5>
+                  <p style="text-align: justify;" class="small">100+ Design jobs.</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                  <span class="round p-0"><img src="/imgs/companies/google.jpg" alt="google" class="img-fluid rounded-circle"></span>
+                  <h5 class="mb-2 sub left-aligned" style="text-align: left;">Sales</h5>
+                  <p style="text-align: justify;" class="small">100+ Sales jobs.</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                  <span class="round p-0"><img src="/imgs/companies/google.jpg" alt="google" class="img-fluid rounded-circle"></span>
+                  <h5 class="mb-2 sub left-aligned" style="text-align: left;">Finance</h5>
+                  <p style="text-align: justify;" class="small">100+ Finance jobs.</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                  <span class="round p-0"><img src="/imgs/companies/google.jpg" alt="google" class="img-fluid rounded-circle"></span>
+                  <h5 class="mb-2 sub left-aligned" style="text-align: left;">Automobile</h5>
+                  <p style="text-align: justify;" class="small">100+ Automobile jobs.</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="p-3 text-center h-100 smdiv justify-content-start d-flex flex-column hoverdiv">
+                  <span class="round p-0"><img src="/imgs/companies/google.jpg" alt="google" class="img-fluid rounded-circle"></span>
+                  <h5 class="mb-2 sub left-aligned" style="text-align: left;">Construction</h5>
+                  <p style="text-align: justify;" class="small">100+ Construction jobs.</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>      
+        </section>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script src="/main.js"></script>
 </body>
 </html>
